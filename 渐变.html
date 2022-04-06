@@ -1,0 +1,133 @@
+<!DOCTYPE html> 
+<html lang="zh-CN"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="关键词信息"> 
+    <meta name="description" content="描述信息"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>渐变色</title> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        div{
+            width: 200px;
+            height:200px;
+            margin: 100px 100px 50px;
+            border: 1px black solid;
+            
+        }
+        .taiji{
+            border-radius: 50%;
+            background: 
+            radial-gradient(
+                50px 50px at center 75%,
+                black 25%,
+                white 25%,
+                white 100%,
+                transparent 100%
+            ),
+            radial-gradient(
+                50px 50px at center 25%,
+                white 25%,
+                black 25%,
+                black 100%,
+                transparent 100%
+            ),
+            linear-gradient(
+                to right,
+                black 50%,
+                white 50%
+            );
+        }
+
+
+        .rainbow{
+            background: 
+            radial-gradient(
+                50% 38% at center bottom,
+                transparent 30%,
+                red 30%,red 40%,
+                orange 40%,orange 50%,
+                yellow 50%,yellow 60%,
+                green 60%,green 70%,
+                blue 70%,blue 80%,
+                cyan 80%,cyan 90%,
+                purple 90%, purple 100%,
+                transparent 100%
+            );
+        }
+
+
+        .checkerboard{
+            /* background: 
+            linear-gradient(
+                to right top,
+                transparent 75%,
+                black 75%
+            ),
+
+            linear-gradient(
+                to right bottom,
+                transparent 75%,
+                black 75%
+            ) -100px 0px,
+
+            linear-gradient(
+                to left bottom,
+                transparent 75%,
+                black 75%
+            ) 100px -100px,
+
+            linear-gradient(
+                to left top,
+                transparent 75%,
+                black 75%
+            ) 0px 100px;
+            background-size: 40px 40px; */
+            background: 
+            linear-gradient(
+                to right top,
+                black 25%,
+                transparent 25%,
+                transparent 75%,
+                black 75%,
+                black 100%
+            ),
+
+            linear-gradient(
+                to right top,
+                black 25%,
+                transparent 25%,
+                transparent 75%,
+                black 75%,
+                black 100%
+            );
+            /* 多个背景图的位置调整 */
+            background-position:100px 100px,0px 0px;
+            background-size: 40px 40px;
+
+         }
+
+    </style>
+</head>
+<body>
+    <div class="taiji"> 
+        
+    </div>
+    <div class="rainbow">
+
+    </div>
+    <div class="checkerboard">
+
+    </div>
+</body>
+</html>

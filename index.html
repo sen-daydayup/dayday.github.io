@@ -1,0 +1,121 @@
+<!DOCTYPE html> 
+<html lang="zh-CN"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="关键词信息"> 
+    <meta name="description" content="描述信息"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三明治</title> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        .wrap{
+            width: 1177px;
+            height: 732px;
+            /* border: 1px black solid; */
+            margin: 50px 370px;
+            padding: 95px 85px 0px;
+            box-sizing: border-box;
+
+            
+            /* 多张背景图的复合写法 */
+            background: url(./img/foodmenu_category_3.svg)no-repeat 20px 100px/320px auto,
+            url(./img/download-1.png),
+            url(./img/download.png)no-repeat center/cover;
+        }
+        .wrap > .title{
+            font-size:35px;
+            font-weight: 400;
+            letter-spacing: 8px;
+        }
+        .wrap > .product-wrap{
+            /* height: 500px; */
+            /* background-color: peru; */
+            font-size: 0;/*清楚空格解析*/
+            margin-top: 45px;
+        }
+        .wrap > .product-wrap > li{
+            display: inline-block;
+            vertical-align: top;  
+            width: 228px;
+            /* height: 400px; */
+            font-size: 18px; 
+            letter-spacing: 2px;
+            /* background-color: purple; */
+            margin-right: 31px;
+            margin-bottom: 10px; 
+        } 
+        
+        .wrap > .product-wrap .cler{
+            margin-right: 0px;
+        }
+        .wrap > .product-wrap > li p{
+            font-size: 14px;
+            margin: 45px 0px 25px;
+        }
+        .wrap > .more{
+            width: 230px;
+            line-height: 60px;
+            text-align: center;
+            font-size: 16px;
+            border: 1px solid black;
+            background-color: #C2D65B;
+            margin: 50px 0px 50px auto;
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1 class="title">普通三明治</h1>
+        <ul class="product-wrap">
+            <li>
+                <img width="228px" src="./img/m_sand_a-462x418.png" alt="">
+                <h4>南瓜Keema咖喱沙</h4> 
+                <p>南瓜的甜味和咖喱的辛辣味完美地融合在一起！李子和核桃的口音是</p>
+                <span>¥750</span>
+            </li>
+            <li>  
+                <img width="228px" src="./img/m_sand_b-462x418.png" alt="">
+                <h4>西式蘑菇炒蛋沙</h4> 
+                <p>蓬松的炒鸡蛋和大量的蘑菇，上面放有丰富的番茄酱和奶酪粉</p>
+                <span>¥600</span>
+            </li>
+            <li> 
+                <img width="228px" src="./img/m_sand_c-462x418.png" alt="">
+                <h4>咸鸡t沙</h4> 
+                <p>健康，多汁的沙子和柔软的鸡胸肉，配以凤尾鱼的塔纳德酱</p>
+                <span>¥700</span>
+            </li>
+            <li class="cler">
+                <img width="228px" src="./img/m_sand_d-462x418.png" alt="">
+                <h4>爆米花虾沙</h4> 
+                <p>丰满的虾和塔塔酱展现出绝佳的组合</p>
+                <span>¥800</span>
+            </li>
+        </ul>
+        <div class="more">
+            查看更多
+        </div>
+        
+    </div>
+    
+
+
+
+
+
+</body>
+</html>
